@@ -1,0 +1,26 @@
+/* ::before{
+
+    content:'';
+    width: 20px;
+    height: 2px;
+    background-color: #64748b;   
+    margin-top: 10px;
+    margin-right: 5px;
+} */
+.active{
+    display: flex;
+    --tw-text-opacity: 1;
+    color: rgb(241 245 249 / var(--tw-bg-opacity)) /*#64748b*/;
+    /* background-color: rgb(241 245 249 / var(--tw-bg-opacity)) #f1f5f9; */
+}
+.active-span{
+    --tw-text-opacity: 1;
+    margin-top: 0.75rem /* 12px */;
+    margin-right: 0.75rem /* 12px */;
+    height: 1px;
+    width: 4rem /* 64px */;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgb(241 245 249 / var(--tw-bg-opacity)) /* #f1f5f9 */;
+
+}
