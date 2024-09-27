@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { ScrollProvider } from "./contexts/scrollProvider";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,10 +27,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ScrollProvider>
+          <div>
+            {/* <SpotlightEffect/> */}
+            {/* <FixedSection/> */}
+            {children}
+          </div>
+        </ScrollProvider>
+        {/* <h1>Hello this is a test to this layout stuff </h1> */}
       </body>
     </html>
   );
