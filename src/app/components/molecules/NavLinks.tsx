@@ -11,7 +11,7 @@ function NavLinks() {
     function handleClick(e: any, id: number){ 
         e.stopPropagation()
         setActive(id);
-        setActiveSection(id)
+        setActiveSection(id);
         // console.log(id)
     }
     
@@ -34,7 +34,7 @@ function NavLinks() {
         }
       }, []);
   return (
-    <div>
+    <div className='my-7'>
         {/* NavLinks */}
         {
             links.map((item,index)=>
