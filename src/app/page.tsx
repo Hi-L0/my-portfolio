@@ -10,18 +10,17 @@ import { ScrollProvider, useScrollContext } from "./contexts/scrollProvider";
 
 
 export default function Home() {
+  const {activeSection} = useScrollContext()
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const handleMouseMove = (e:any) => {
     const scrollOffsetY = window.scrollY;
     const scrollOffsetX = window.scrollX;
     setPosition({
-      x: e.clientX, // Horizontal position of the cursor
-      y: e.clientY, // Vertical position of the cursor
+      x: e.clientX  , // Horizontal position of the cursor
+      y: e.clientY , // Vertical position of the cursor
     });
     // console.log(position)
   };
-
-  useEffect
   
   return (
     

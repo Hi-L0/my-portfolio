@@ -11,10 +11,9 @@ function FixedSection() {
             <h1 className='text-5xl font-bold'>
                 My full name
             </h1>
-            <div className='lg:py-6'>
-              <p>
-                message Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, asperiores.
-                Voluptatem placeat explicabo commodi iure optio laboriosam dolorum, vel cum expedita aut, sit dolorem dicta obcaecati repellat libero laborum distinctio.
+            <div className='lg:py-6 max-w-lg' >
+              <p className='text-xl text-slate-200'>
+                Software Engineer (Full stack developer)
               </p>
             </div> 
             <NavLinks/>
