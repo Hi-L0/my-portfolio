@@ -36,14 +36,16 @@ function NavLinks() {
   return (
     <div className='my-7'>
         {/* NavLinks */}
-        {
-            links.map((item,index)=>
-                <div key={index}  
-                    onClick={(e) => handleClick(e, item.id)}>
-                    <Links link={item} selected_id={activeSection}></Links>
-                </div>
-            )
-        }
+        <ul>
+            {
+                links.map((item,index)=>
+                    <li key={index}  className='list-none '
+                        onClick={(e) => handleClick(e, item.id)}>
+                        <Links link={item} selected_id={activeSection}></Links>
+                    </li>
+                )
+            }
+        </ul>
     </div>
   )
 }
