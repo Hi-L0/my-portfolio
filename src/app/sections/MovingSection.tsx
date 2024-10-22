@@ -4,6 +4,8 @@ import Aboutme from './rightside/Aboutme'
 import Education from './rightside/Education'
 import { useScrollContext } from '../contexts/scrollProvider';
 import { links } from '@/data/links/links';
+import Projects from './rightside/Experiences';
+import Experiences from './rightside/Experiences';
 
 function MovingSection() {
     // const { activeSection } = useScrollContext();
@@ -67,30 +69,8 @@ function MovingSection() {
         <section ref={section2Ref}>
             <Education/>
         </section>
-        <section ref={section3Ref} id='experience'>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquid praesentium, sequi minus nisi excepturi ipsa saepe nulla reiciendis accusantium voluptas alias autem doloremque assumenda nihil nostrum odit maxime labore!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquid praesentium, sequi minus nisi excepturi ipsa saepe nulla reiciendis accusantium voluptas alias autem doloremque assumenda nihil nostrum odit maxime labore!
-            </p>
-            
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquid praesentium, sequi minus nisi excepturi ipsa saepe nulla reiciendis accusantium voluptas alias autem doloremque assumenda nihil nostrum odit maxime labore!
-            </p>
-            
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquid praesentium, sequi minus nisi excepturi ipsa saepe nulla reiciendis accusantium voluptas alias autem doloremque assumenda nihil nostrum odit maxime labore!
-            </p>
-            
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquid praesentium, sequi minus nisi excepturi ipsa saepe nulla reiciendis accusantium voluptas alias autem doloremque assumenda nihil nostrum odit maxime labore!
-            </p>
-            
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, aliquid praesentium, sequi minus nisi excepturi ipsa saepe nulla reiciendis accusantium voluptas alias autem doloremque assumenda nihil nostrum odit maxime labore!
-            </p>
-            
+        <section ref={section3Ref} >
+           <Experiences/>     
         </section>
     </div>
   )
