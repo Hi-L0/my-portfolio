@@ -1,0 +1,28 @@
+export const experience:ExperienceType[]=[
+    {
+        company:"",
+        start_date:"",
+        end_date:"",
+        post:{
+            title:"",
+            description:"",
+            project_url:"",
+            tech_used:[
+                "ReactJs","NextJs","Laravel","PHP"
+            ]
+        }
+    },
+    {
+        company:"",
+        start_date:"",
+        end_date:"",
+        post:{
+            title:"",
+            description:"",
+            project_url:"",
+            tech_used:[
+                "Laravel","PHP","Livewire"
+            ]
+        }
+    }
+]
