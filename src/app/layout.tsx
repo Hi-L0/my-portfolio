@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ScrollProvider } from "./contexts/scrollProvider";
-
+import 'rsuite/dist/rsuite.min.css';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
