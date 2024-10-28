@@ -1,4 +1,4 @@
-export const experience:ExperienceType[]=[
+export const experience:experienceType[]=[
     {
         company:"",
         start_date:"",

@@ -1,4 +1,4 @@
-type ExperienceType ={
+type experienceType ={
     start_date:string;
     end_date:string;
     company:string;
