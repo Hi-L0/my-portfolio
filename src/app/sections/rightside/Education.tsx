@@ -2,7 +2,9 @@
 import EducationCard from '@/app/components/molecules/EducationCard'
 import React, { useEffect, useState } from 'react'
 import { education } from '@/data/education/education'
+import { Timeline } from 'rsuite';
 function Education() {
+    const experienceInView = 0
     // const [isHovered,setIsHovered]=useState(false)
     // function handleHover(){
     //     setIsHovered(prev=>!prev);
@@ -17,11 +19,7 @@ function Education() {
     //     }
     // },[])
     const [selected, setSelected] = useState<number|undefined>();
-    const [displayAll ,setDisplayAll]=useState(true)
-    function handleHover(){
-        // setSelected(id);
-        setDisplayAll(false)
-    }
+    
   return (
     <section id='education' className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24' >
         <div className='mt-24'>
@@ -29,15 +27,15 @@ function Education() {
              education 
             </h1> */}
             
-            <div>
+            <Timeline isItemActive={index=>index===experienceInView}>
                 {/* education cards */}
                 { education.map(item=>
-                    <div key={item.id} onMouseEnter={(e)=>handleHover()} onMouseLeave={(e)=>{setDisplayAll(true)}}>
-                        <EducationCard data={item} displayed={displayAll}/>
-                    </div>
+                    <Timeline.Item key={item.id} >
+                        <EducationCard data={item}/>
+                    </Timeline.Item>
                 )
             }
-            </div>
+            </Timeline>
         </div>
         
     </section>

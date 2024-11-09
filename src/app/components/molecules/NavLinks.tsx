@@ -9,10 +9,10 @@ function NavLinks() {
     const { setActiveSection } = useScrollContext();
     const { activeSection } = useScrollContext();
     function handleClick(e: any, id: number){ 
-        e.stopPropagation()
+        // e.stopPropagation()
         setActive(id);
         setActiveSection(id);
-        // console.log(id)
+        
     }
     
     useEffect(() => {
@@ -25,10 +25,6 @@ function NavLinks() {
                 // const section_id=_link.id
                 setActiveSection(section.id)
             }
-        //   const section = document.querySelector(window.location.hash);
-        //   if (section) {
-        //     section.scrollIntoView({ behavior: 'smooth' });
-        //   }
         }else{
             setActive(1)
         }
@@ -39,10 +35,10 @@ function NavLinks() {
         <ul>
             {
                 links.map((item,index)=>
-                    <li key={index}  className='list-none '
+                    <div key={index}  className=''
                         onClick={(e) => handleClick(e, item.id)}>
                         <Links link={item} selected_id={activeSection}></Links>
-                    </li>
+                    </div>
                 )
             }
         </ul>

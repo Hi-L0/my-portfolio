@@ -6,6 +6,7 @@ import FixedSection from "./sections/FixedSection";
 import { useEffect, useRef, useState } from "react";
 import SpotlightEffect from "./components/effects/SpotlightEffect";
 import { ScrollProvider, useScrollContext } from "./contexts/scrollProvider";
+import { data } from "@/data/data";
 
 
 
@@ -21,6 +22,8 @@ export default function Home() {
     });
     // console.log(position)
   };
+
+  const info= data;
   
   return (
     
@@ -29,7 +32,7 @@ export default function Home() {
         <div onMouseMove={handleMouseMove} className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
           <div className="lg:flex lg:justify-between lg:gap-4">
             
-              <FixedSection/>
+              <FixedSection name={info.name} job_title={info.job_title}/>
 
             
             <div className=" pt-24 lg:w-1/2 lg:py-5 md:min-h-screen md:scroll-smooth">
