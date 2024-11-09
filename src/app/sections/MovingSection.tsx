@@ -17,15 +17,14 @@ function MovingSection() {
     
     // const [incr,setIncr]=useState(0)
     
-  
     useEffect(()=>{
         const handleScroll = () => {
             const section1Top = section1Ref.current?.offsetTop || 0;
             const section2Top = section2Ref.current?.offsetTop || 0;
             const section3Top = section3Ref.current?.offsetTop || 0;
       
-            const scrollPosition = window.scrollY + window.innerHeight / 2;
-            console.log(scrollPosition,section1Top,section2Top);
+            const scrollPosition = window.scrollY + window.innerHeight / 4;
+            console.log(scrollPosition);
             
             if (scrollPosition>= section3Top) {
               setActiveSection(3);
@@ -43,27 +42,28 @@ function MovingSection() {
         }, [setActiveSection]);
         
 
-    useEffect(() => {
-        // Scroll to the section on page load if there's a hash in the URL
-        if (window.location.hash) {
-            const section = document.querySelector(window.location.hash);
-        //   var section_name:string=window.location.hash.slice(1)
-        //   console.log(section_name)
-        //   const _link=links.find(item=>section_name=item.title)
-        //   console.log(_link)
-        //   if(_link){
-        //       const section_id=_link.id
-        //       setActiveSection(section_id)
-        //   }
-            if (section) {
-            section.scrollIntoView({ behavior: 'smooth',block:'center' });
-            }
-        }
-    }, []);
+    // useEffect(() => {
+    //     // Scroll to the section on page load if there's a hash in the URL
+    //     if (window.location.hash) {
+    //         const section = document.querySelector(window.location.hash);
+    //     //   var section_name:string=window.location.hash.slice(1)
+    //     //   console.log(section_name)
+    //     //   const _link=links.find(item=>section_name=item.title)
+    //     //   console.log(_link)
+    //     //   if(_link){
+    //     //       const section_id=_link.id
+    //     //       setActiveSection(section_id)
+    //     //   }
+    //         if (section) {
+    //         section.scrollIntoView({ behavior: 'smooth',block:'center' });
+            
+    //         }
+    //     }
+    // }, []);
     
   return (
     <div className='pt-24 lg:py-24'> 
-        <section ref={section1Ref}>
+        <section ref={section1Ref} className='-mt-4'>
             <Aboutme/>
         </section>
         <section ref={section2Ref}>
