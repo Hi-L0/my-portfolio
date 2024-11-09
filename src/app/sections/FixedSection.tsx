@@ -12,7 +12,7 @@ function FixedSection(props:personalInfoType) {
   // console.log(activeSection)
   return (
     <div className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 ' >
-        <div className='block items-center justify-items-center '>
+        <div className='block '>
             <h1 className='text-5xl font-bold'>
                 {props.name}
             </h1>

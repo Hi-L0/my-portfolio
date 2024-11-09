@@ -8,7 +8,7 @@
     margin-right: 5px;
 } */
 :root {
-    --primary-color: #4AFFEB; /* A nice blue color */
+    --primary-color-footer: #4AFFEB; /* A nice blue color */
 }
 .link:hover{
     a {
@@ -39,5 +39,5 @@
 
 }
 .footer>a:hover{
-    color: var(--primary-color);
+    color: var(--primary-color-footer);
 }
