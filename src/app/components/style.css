@@ -11,15 +11,17 @@
     --primary-color-footer: #4AFFEB; /* A nice blue color */
 }
 .link:hover{
-    a {
+    
         --tw-text-opacity: 1;
         color: rgb(241 245 249 / var(--tw-text-opacity));
+        text-decoration: none;
         span {
             height: 2px;
             width: 4rem /* 64px */;
             background-color: rgb(241 245 249 / var(--tw-text-opacity)); ;
+            
         }
-    }
+    
 }
 .active{
     display: flex;
