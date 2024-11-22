@@ -6,7 +6,6 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Footer from '../components/molecules/Footer';
 import { BsDownload } from 'react-icons/bs';
 import ResumeBtn from '../components/atoms/btns/ResumeBtn';
-import "./mainsection.css"
 
 
 function FixedSection(props:personalInfoType) {
