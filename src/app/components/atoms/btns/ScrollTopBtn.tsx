@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { LuChevronUp } from "react-icons/lu"
 // import { ChevronUp } from ""
 
-const ScrollToTopButton = () => {
+const ScrollTopButton = () => {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -42,4 +42,4 @@ const ScrollToTopButton = () => {
   )
 }
 
-export default ScrollToTopButton
+export default ScrollTopButton
