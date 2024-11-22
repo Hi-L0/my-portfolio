@@ -13,7 +13,7 @@ export const links:linkType[]=[
     },
     {   
         id:4,
-        title:'project'
+        title:'projects'
     },
     
 ]

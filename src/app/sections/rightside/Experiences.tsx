@@ -1,26 +1,36 @@
 
 import ExeprienceCard from '@/app/components/molecules/ExeprienceCard';
-import React, { useState } from 'react'
+import { experiences } from '@/data/experience/experience';
+import React, { useEffect, useState } from 'react'
 import { Timeline } from 'rsuite';
 
 
 function Experiences() {
   const testarray = ["dsjdsk","dsjdsk","dsjdsk"];
   const experienceInView = 0
+  const [selected, setSelected]=useState(0)
   const [displayAll ,setDisplayAll]=useState(true)
-    function handleHover(){
-        // setSelected(id);
+    function handleHover(id:number){
+        setSelected(id);
         setDisplayAll(false)
     }
+    // useEffect(()=>{
+
+    //       window.addEventListener('mouseover',handleHover)
+          
+    //       return ()=>{
+    //           window.removeEventListener('mouseover',handleHover)
+    //       }
+    //   },[])
   return (
     <div id='experience' className='mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24'>
        <div>
-        {testarray.map((item,index)=>
+        {experiences.map((item,index)=>
           <div 
             key={index}
-            onMouseEnter={(e)=>handleHover()} onMouseLeave={(e)=>{setDisplayAll(true)}}
+            onMouseEnter={(e)=>handleHover(item.id)} onMouseLeave={(e)=>{setDisplayAll(true)}}
           >
-            <ExeprienceCard displayed={displayAll} />
+            <ExeprienceCard data={item} selected={selected} displayed={displayAll} />
             </div>
           )
         }
