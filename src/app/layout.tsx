@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ScrollProvider } from "./contexts/scrollProvider";
 import 'rsuite/dist/rsuite.min.css';
-import ScrollToTopButton from "./components/atoms/btns/ScrollTopBtn";
+import ScrollTopButton from "./components/atoms/btns/ScrollTopBtn";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -39,7 +39,7 @@ export default function RootLayout({
             {/* <FixedSection/> */}
             {children}
           </div>
-          <ScrollToTopButton/>
+          <ScrollTopButton/>
         </ScrollProvider>
         {/* <h1>Hello this is a test to this layout stuff </h1> */}
       </body>
