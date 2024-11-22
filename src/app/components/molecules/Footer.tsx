@@ -9,7 +9,7 @@ function Footer() {
         <a href={process.env.NEXT_PUBLIC_GITHUB_URL} target='_blank'>
             <FaGithub size={30} />
         </a>
-        <a href=''>
+        <a href={process.env.NEXT_PUBLIC_LinkedIn_URL} target='_blank'>
             <FaLinkedinIn size={30} />
         </a>
         <a href='mailto:hamzalaaroussi.500@gmail.com'>
