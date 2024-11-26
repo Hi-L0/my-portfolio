@@ -37,8 +37,11 @@ function ResumeBtn() {
               French version
             </a>
           </MenuItem>
+          {/* TODO 
+              - integrate english resume
+          */}
           <MenuItem>
-            <a className='group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 hover:no-underline no-underline hover:text-white data-[focus]:bg-white/10' href='/resume/hamza_laaroussi_dev_resume.pdf' target="_blank" rel="noopener noreferrer" title='download my resume'>
+            <a className='group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 hover:no-underline no-underline hover:text-white data-[focus]:bg-white/10' href='#' target="_blank" rel="noopener noreferrer" title='download my resume'>
               English version
             </a>
           </MenuItem>
