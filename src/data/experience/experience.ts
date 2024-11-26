@@ -8,7 +8,7 @@ export const experiences:experienceType[]=[
             title: "Full Stack Developer",
             description: "Designed and developed a responsive website for a hotel, including a custom CMS for managing reservations and offers, enhancing user experience and staff satisfaction.",
             project_url: "//villa-amma.com",
-            tech_used: ["NextJS", "Laravel", "JavaScript", "HTML", "CSS", "MySQL", "tailwindCSS"," Framer motion"]
+            tech_used: ["NextJS", "Laravel","php", "JavaScript", "HTML", "CSS", "MySQL", "tailwindCSS"," Framer motion"]
         }
     },
     {   
@@ -44,7 +44,7 @@ export const experiences:experienceType[]=[
             title: "Full Stack Developer",
             description: "Designed and developed a management application for Workeo, a co-working space, enabling efficient management of space bookings and memberships. Delivered a user-friendly and intuitive interface tailored to administrative needs.",
             project_url: "//workeo.ma",
-            tech_used: ["Laravel", "Livewire", "MySQL", "JavaScript"]
+            tech_used: ["Laravel",'php', "Livewire", "MySQL", "JavaScript"]
         }
     },
     {   
@@ -56,7 +56,7 @@ export const experiences:experienceType[]=[
             title: "Full Stack Web Developer Intern",
             description: "Led the developement and creation of a SaaS for transport and logistics management with front-end data visualization and automated invoice generation.",
             project_url: "#",
-            tech_used: ["Laravel", "ReactJS", "MySQL", "JavaScript", "Agile-Scrum"]
+            tech_used: ["Laravel", "ReactJS","php", "MySQL", "JavaScript", "Agile-Scrum"]
         }
     },
     {   
