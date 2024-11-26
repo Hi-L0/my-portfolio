@@ -3,10 +3,10 @@ import React, { useEffect, useRef, useState } from 'react'
 import Aboutme from './rightside/Aboutme'
 import Education from './rightside/Education'
 import { useScrollContext } from '../contexts/scrollProvider';
-import { links } from '@/data/links/links';
 import Projects from './rightside/Projects';
 import Experiences from './rightside/Experiences';
 import ResumeBtn from '../components/atoms/btns/ResumeBtn';
+import { data } from '@/data/data';
 
 function MovingSection() {
     // const { activeSection } = useScrollContext();

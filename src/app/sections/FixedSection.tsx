@@ -1,10 +1,6 @@
 import React, { useState } from 'react'
 import NavLinks from '../components/molecules/NavLinks'
-import SpotlightEffect from '../components/effects/SpotlightEffect';
-import { useScrollContext } from '../contexts/scrollProvider';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Footer from '../components/molecules/Footer';
-import { BsDownload } from 'react-icons/bs';
 import ResumeBtn from '../components/atoms/btns/ResumeBtn';
 
 
