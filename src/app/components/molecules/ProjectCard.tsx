@@ -12,7 +12,7 @@ function ProjectCard({data, displayed, selected}:{data:projectsType, displayed:b
             <div className='absolute -inset-x-4 -inset-y-4 -z-10 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/30 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg '></div>
             <div className='sm:col-span-5'>
                 <div className=' hover:text-3xl'>
-                    <a href={data.link} target='_blank' className={`flex justify-items-start justify-between text-[#cbd5e1] font-semibold hover:text-teal-400 ${!displayed ?  selected===data.id? 'text-teal-400':"":""} no-underline hover:no-underline`}>
+                    <a href={data.link} target='_blank' className={`flex justify-items-start justify-between text-slate-100 font-semibold hover:text-teal-400 ${!displayed ?  selected===data.id? 'text-teal-400':"":""} no-underline hover:no-underline`}>
                         <h1 className='text-2xl mb-3 '>
                             {data.title}
                         </h1>
