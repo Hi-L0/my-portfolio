@@ -1,3 +1,4 @@
+import { email } from '@/data/data'
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import React from 'react'
 import { FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa'
@@ -12,7 +13,7 @@ function Footer() {
         <a href={process.env.NEXT_PUBLIC_LinkedIn_URL} target='_blank'>
             <FaLinkedinIn size={30} />
         </a>
-        <a href='mailto:hamzalaaroussi.500@gmail.com'>
+        <a href={`mailto:${email}`}>
             <FaEnvelope size={30} />
         </a>
         {/* <Popover>
