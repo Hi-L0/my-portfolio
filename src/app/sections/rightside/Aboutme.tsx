@@ -1,3 +1,4 @@
+import { data } from '@/data/data'
 import React from 'react'
 
 export default function Aboutme() {
@@ -6,8 +7,8 @@ export default function Aboutme() {
         <h1 className='text-3xl pb-3'>
             About me
         </h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad iure tenetur laboriosam voluptate iusto porro temporibus quo obcaecati dicta, omnis facilis at repellat eos necessitatibus ratione consequuntur recusandae? Ipsam, laudantium.
+        <p className='text-base'>
+            {data.description}
         </p>
     </section>
   )
