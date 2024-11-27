@@ -8,7 +8,7 @@ export const experiences:experienceType[]=[
             title: "Full Stack Developer",
             description: "Designed and developed a responsive website for a hotel, including a custom CMS for managing reservations and offers, enhancing user experience and staff satisfaction.",
             project_url: "//villa-amma.com",
-            tech_used: ["NextJS", "Laravel","php", "JavaScript", "HTML", "CSS", "MySQL", "tailwindCSS"," Framer motion"]
+            tech_used: ["NextJS", "Laravel","php", "JavaScript", "typescript","HTML", "CSS", "MySQL", "tailwindCSS","Framer motion"]
         }
     },
     {   
@@ -56,7 +56,7 @@ export const experiences:experienceType[]=[
             title: "Full Stack Web Developer Intern",
             description: "Led the developement and creation of a SaaS for transport and logistics management with front-end data visualization and automated invoice generation.",
             project_url: "#",
-            tech_used: ["Laravel", "ReactJS","php", "MySQL", "JavaScript", "Agile-Scrum"]
+            tech_used: ["Laravel", "ReactJS","php", "MySQL","typescript", "JavaScript", "Agile-Scrum"]
         }
     },
     {   
@@ -68,7 +68,7 @@ export const experiences:experienceType[]=[
             title: "Final Year Project Intern",
             description: "Designed a web application for visitor management, including requirements analysis, interface development, and proposed improvements in functionality and usability.",
             project_url: "#",
-            tech_used: ["Spring boot", "HTML", "CSS", "JavaScript", "MySQL","ReactJs"]
+            tech_used: ["Spring boot","java" , "HTML", "CSS", "JavaScript", "MySQL","ReactJs"]
         }
     }
 ]
