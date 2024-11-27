@@ -82,7 +82,7 @@ function MovingSection() {
            <Projects/>     
         </section>
         <section id='myresume' className='mt-72 bottom-0 right-0 '>
-          <div className='flex justify-end items-start text-right'>
+          <div className='flex lg:justify-end items-start lg:text-right'>
             <div className='-mb-14'>
               <ResumeBtn/>
             </div>
