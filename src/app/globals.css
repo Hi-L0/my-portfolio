@@ -22,7 +22,7 @@ html{
 body {
   margin: auto;
   color: var(--foreground);
-  background:  #91979e;
+  background: linear-gradient(226deg, #00dfff 0%, #8c00ea 84% 84%);
   font-family: Arial, Helvetica, sans-serif;
   color: #091122;
   top: 0;
