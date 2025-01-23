@@ -8,7 +8,7 @@ export const experiences:experienceType[]=[
             title: "Full Stack Developer",
             description: "Designed and developed a responsive website for a hotel, including a custom CMS for managing reservations and offers, enhancing user experience and staff satisfaction.",
             project_url: "//villa-amma.com",
-            tech_used: ["NextJS", "Laravel","php", "JavaScript", "typescript","HTML", "CSS", "MySQL", "tailwindCSS","Framer motion"]
+            tech_used: ["NextJS", "Laravel","php", "JavaScript", "typescript","HTML", "CSS", "MySQL", "tailwindCSS","Motion"]
         }
     },
     {   
