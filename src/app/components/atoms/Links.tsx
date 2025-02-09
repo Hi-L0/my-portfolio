@@ -9,7 +9,7 @@ function Links({link,selected_id}:{link:linkType,selected_id:number | undefined}
         <a 
           href={`#${link.title}`} 
           key={link.id}
-          className={`py-3 uppercase font-medium link flex text-sm tracking-widest ${selected_id===link.id  ? "active" : "flex text-slate-700 hover:text-slate-100"}`}
+          className={`w-1/3 py-3 uppercase font-medium link flex text-sm tracking-widest ${selected_id===link.id  ? "active" : "flex text-slate-700 hover:text-slate-100"}`}
         >
           <span className={selected_id===link.id  ? "active-span"
           // "bg-slate-100 mt-3 mr-3 h-[1px] w-16  duration-150 ease-in-out"
